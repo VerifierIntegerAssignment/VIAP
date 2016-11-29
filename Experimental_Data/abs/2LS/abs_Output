@@ -1,0 +1,32 @@
+[Pritoms-MacBook-Pro:summarizer pritom$ ./2ls programs/abs.c --k-induction
+2LS version 0.4.0 (based on CBMC 5.4)
+Parsing programs/abs.c
+Converting
+Type-checking abs
+file programs/abs.c line 13 function main: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library
+Generic Property Instrumentation
+Function Pointer Removal
+Performing full inlining
+Constant Propagation
+Using intervals domain with binary search solver
+Computing SSA of _start
+Simplifying
+Max-unwind is 4294967295
+Unwinding (k=0)
+Checking properties of _start
+Loops fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+k-induction counterexample found after 0 unwinding(s)
+** statistics: 
+  number of solver instances: 1
+  number of solver calls: 3
+  number of summaries used: 0
+  number of termination arguments computed: 0
+
+[main.assertion.1] assertion a >= 0: FAILURE
+
+** 0 of 1 unknown
+** 1 of 1 failed
+VERIFICATION FAILED

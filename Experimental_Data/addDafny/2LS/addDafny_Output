@@ -1,0 +1,36 @@
+not terminated 
+
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=63)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#28%63 && $guard#ls31%63 ==> r#lb31%63 <= 2147483647) && ($guard#28%63 && $guard#ls31%63 ==> -((signed __CPROVER_bitvector[33])r#lb31%63) <= 2147483648) && ($guard#28%63 && $guard#ls31%63 ==> l#lb31%63 <= 2147483647) && ($guard#28%63 && $guard#ls31%63 ==> -((signed __CPROVER_bitvector[33])l#lb31%63) <= 2147483648) && ($guard#34%63 && $guard#ls37%63 ==> r#lb37%63 <= 2147483647) && ($guard#34%63 && $guard#ls37%63 ==> -((signed __CPROVER_bitvector[33])r#lb37%63) <= 2147483648) && ($guard#34%63 && $guard#ls37%63 ==> l#lb37%63 <= 2147483647) && ($guard#34%63 && $guard#ls37%63 ==> -((signed __CPROVER_bitvector[33])l#lb37%63) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=64)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier

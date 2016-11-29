@@ -1,0 +1,4 @@
+stdin.dfy(20,10): Error BP5003: A postcondition might not hold on this return path.
+stdin.dfy(4,10): Related location: This is the postcondition that might not hold.
+
+Dafny program verifier finished with 0 verified, 1 error

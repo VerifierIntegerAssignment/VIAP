@@ -1,0 +1,17 @@
+[Pritoms-MacBook-Pro:summarizer pritom$ ./2ls programs/hanoi.c --k-induction
+2LS version 0.4.0 (based on CBMC 5.4)
+Parsing programs/hanoi.c
+Converting
+Type-checking hanoi
+file programs/hanoi.c line 10 function main: function `assume' is not declared
+file programs/hanoi.c line 16 function main: function `power' is not declared
+file programs/hanoi.c line 16 function main: function `asset' is not declared
+Generating GOTO Program
+Adding CPROVER library
+Generic Property Instrumentation
+Function Pointer Removal
+Performing full inlining
+file programs/hanoi.c line 10 function main: no body for function `assume'
+file programs/hanoi.c line 37 function power: recursion is ignored
+file programs/hanoi.c line 16 function main: no body for function `asset'
+VERIFICATION INCONCLUSIVE

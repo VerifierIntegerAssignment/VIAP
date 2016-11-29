@@ -1,0 +1,178 @@
+[Pritoms-MacBook-Pro:summarizer pritom$ ./2ls programs/divDafny1.c --k-induction
+2LS version 0.4.0 (based on CBMC 5.4)
+Parsing programs/divDafny1.c
+Converting
+Type-checking divDafny1
+file programs/divDafny1.c line 10 function main: function `assume' is not declared
+file programs/divDafny1.c line 16 function main: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library
+Generic Property Instrumentation
+Function Pointer Removal
+Performing full inlining
+file programs/divDafny1.c line 10 function main: no body for function `assume'
+Constant Propagation
+Using intervals domain with binary search solver
+Computing SSA of _start
+Simplifying
+Max-unwind is 4294967295
+Unwinding (k=0)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%0 && $guard#ls30%0 ==> r#lb30%0 <= 2147483647) && ($guard#27%0 && $guard#ls30%0 ==> -((signed __CPROVER_bitvector[33])r#lb30%0) <= 2147483648) && ($guard#27%0 && $guard#ls30%0 ==> q#lb30%0 <= 2147483647) && ($guard#27%0 && $guard#ls30%0 ==> -((signed __CPROVER_bitvector[33])q#lb30%0) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=1)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%1 && $guard#ls30%1 ==> r#lb30%1 <= 2147483647) && ($guard#27%1 && $guard#ls30%1 ==> -((signed __CPROVER_bitvector[33])r#lb30%1) <= 2147483648) && ($guard#27%1 && $guard#ls30%1 ==> q#lb30%1 <= 2147483647) && ($guard#27%1 && $guard#ls30%1 ==> -((signed __CPROVER_bitvector[33])q#lb30%1) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=2)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%2 && $guard#ls30%2 ==> r#lb30%2 <= 2147483647) && ($guard#27%2 && $guard#ls30%2 ==> -((signed __CPROVER_bitvector[33])r#lb30%2) <= 2147483648) && ($guard#27%2 && $guard#ls30%2 ==> q#lb30%2 <= 2147483647) && ($guard#27%2 && $guard#ls30%2 ==> -((signed __CPROVER_bitvector[33])q#lb30%2) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=3)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%3 && $guard#ls30%3 ==> r#lb30%3 <= 2147483647) && ($guard#27%3 && $guard#ls30%3 ==> -((signed __CPROVER_bitvector[33])r#lb30%3) <= 2147483648) && ($guard#27%3 && $guard#ls30%3 ==> q#lb30%3 <= 2147483647) && ($guard#27%3 && $guard#ls30%3 ==> -((signed __CPROVER_bitvector[33])q#lb30%3) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=4)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%4 && $guard#ls30%4 ==> r#lb30%4 <= 2147483647) && ($guard#27%4 && $guard#ls30%4 ==> -((signed __CPROVER_bitvector[33])r#lb30%4) <= 2147483648) && ($guard#27%4 && $guard#ls30%4 ==> q#lb30%4 <= 2147483647) && ($guard#27%4 && $guard#ls30%4 ==> -((signed __CPROVER_bitvector[33])q#lb30%4) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=5)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+
+Summarizing function _start
+Analyzing function _start
+Computing summary
+
+Summary for function _start
+params: 
+globals_in: __CPROVER_threads_exited __CPROVER_malloc_is_new_array __CPROVER_dead_object __CPROVER_deallocated __CPROVER_malloc_object __CPROVER_memory_leak __CPROVER_rounding_mode __CPROVER_pipe_count __CPROVER_malloc_size __CPROVER_next_thread_id __CPROVER_thread_id 
+globals_out: __CPROVER_threads_exited#12 __CPROVER_malloc_is_new_array#4 __CPROVER_dead_object#2 __CPROVER_deallocated#3 __CPROVER_malloc_object#5 __CPROVER_memory_leak#7 __CPROVER_rounding_mode#10 __CPROVER_pipe_count#9 __CPROVER_malloc_size#6 __CPROVER_next_thread_id#8 __CPROVER_thread_id#11 
+forward precondition: TRUE
+forward transformer: TRUE
+forward invariant: ($guard#27%5 && $guard#ls30%5 ==> r#lb30%5 <= 2147483647) && ($guard#27%5 && $guard#ls30%5 ==> -((signed __CPROVER_bitvector[33])r#lb30%5) <= 2147483648) && ($guard#27%5 && $guard#ls30%5 ==> q#lb30%5 <= 2147483647) && ($guard#27%5 && $guard#ls30%5 ==> -((signed __CPROVER_bitvector[33])q#lb30%5) <= 2147483648)
+backward precondition: not computed
+backward postcondition: not computed
+backward transformer: not computed
+backward invariant: not computed
+termination argument: not computed
+terminates: unknown
+
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+Unwinding (k=6)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier

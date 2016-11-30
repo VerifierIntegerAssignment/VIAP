@@ -1,0 +1,34 @@
+[Pritoms-MacBook-Pro:summarizer pritom$ ./2ls programs/potSumm5.c --k-induction
+2LS version 0.4.0 (based on CBMC 5.4)
+Parsing programs/potSumm5.c
+Converting
+Type-checking potSumm5
+file programs/potSumm5.c line 9 function main: function `assume' is not declared
+file programs/potSumm5.c line 16 function main: function `assert' is not declared
+Generating GOTO Program
+Adding CPROVER library
+Generic Property Instrumentation
+Function Pointer Removal
+Performing full inlining
+file programs/potSumm5.c line 9 function main: no body for function `assume'
+Constant Propagation
+Using intervals domain with binary search solver
+Computing SSA of _start
+Simplifying
+Max-unwind is 4294967295
+Unwinding (k=0)
+Checking properties of _start
+Loops not fully unwound
+Running refinement loop with MiniSAT 2.2.1 with simplifier
+k-induction counterexample found after 0 unwinding(s)
+** statistics: 
+  number of solver instances: 1
+  number of solver calls: 4
+  number of summaries used: 0
+  number of termination arguments computed: 0
+
+[main.assertion.1] assertion sum == ((2 * X * X * X * X * X * X + 6 * X * X * X * X * X + 5 * X * X * X * X) - X * X) / 12: FAILURE
+
+** 0 of 1 unknown
+** 1 of 1 failed
+VERIFICATION FAILED

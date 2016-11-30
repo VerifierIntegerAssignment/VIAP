@@ -22,7 +22,7 @@ void main()
       		r = r - Y;
       		q = q + 1;
     	}
-	__VERIFIER_assert(X==q*Y+r && r >= 0 && r < Y);
+	__VERIFIER_assert(X==q*Y+r);
 	
 	
 }

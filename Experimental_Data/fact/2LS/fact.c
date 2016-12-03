@@ -1,4 +1,12 @@
-
+extern void __VERIFIER_error(void);
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+      ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
 void main()
 {
 		int i;
@@ -7,20 +15,20 @@ void main()
 		
 		i=1;
 		F=1;
-		assume(X>=0);
+		__VERIFIER_assume(X>=0);
 		
 		while(i <= X)
 		{
 			F=F*i;
 			i=i+1;
 		}
-                assert(F==factorial(X));
+                __VERIFIER_assert(F==factorial(X));
 }
 
 
 int factorial(int n) 
 {
-        assume(n>=0);
+        __VERIFIER_assume(n>=0);
         if (n == 0){
             return 1;
             }

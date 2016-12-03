@@ -1,3 +1,12 @@
+extern void __VERIFIER_error(void);
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+      ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
 void main()
 {
 
@@ -7,13 +16,13 @@ int x;
 i=1;
 h=1;
 
-  assume(x>=0);
+  __VERIFIER_assume(x>=0);
   while (i < x) {
     h=2*h+1;
     i=i+1;     
   }
 	
-asset(h==power(2,x)-1);
+__VERIFIER_assert(h==power(2,x)-1);
 	
 	
 

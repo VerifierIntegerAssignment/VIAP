@@ -1,3 +1,12 @@
+extern void __VERIFIER_error(void);
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+      ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
 void main()
 {
 
@@ -6,14 +15,14 @@ void main()
                 int X;
 		sum=0;
 		i=0;
-                assume(X>=0);
+                __VERIFIER_assume(X>=0);
 		while(i<X)
 		{
 			i=i+1;
 			sum=sum+i*i*i*i;
 			
 		}
-                assert(sum == (6*X*X*X*X*X+15*X*X*X*X+10*X*X*X-X)/30);
+                __VERIFIER_assert(sum == (6*X*X*X*X*X+15*X*X*X*X+10*X*X*X-X)/30);
 		
 
 

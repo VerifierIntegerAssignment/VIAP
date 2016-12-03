@@ -1,3 +1,12 @@
+extern void __VERIFIER_error(void);
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+      ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
 void main()
 {
 
@@ -12,7 +21,7 @@ void main()
     ds=Y;
     p=1;
     q=0;
-    assume(X>=0 && Y>0);
+    __VERIFIER_assume(X>=0 && Y>0);
     while ( r>= ds )
         {
         ds=2*ds;
@@ -32,7 +41,7 @@ void main()
          }
 	
 
-   assert(X==q*Y+r);
+   __VERIFIER_assert(X==q*Y+r);
 	
 
 	

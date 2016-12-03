@@ -1,3 +1,13 @@
+extern void __VERIFIER_error(void);
+extern void __VERIFIER_assume(int);
+void __VERIFIER_assert(int cond) {
+  if (!(cond)) {
+      ERROR: __VERIFIER_error();
+  }
+  return;
+}
+int __VERIFIER_nondet_int();
+
 void main()
 {
 
@@ -10,7 +20,7 @@ void main()
     	su=1;
     	t=1;
 
-        assume(X>=0);
+        __VERIFIER_assume(X>=0);
     	while ( su <= X )
         {
         a=a+1;
@@ -18,7 +28,7 @@ void main()
         su=su+t;
         }
 
-     assert(a*a<=X);
+     __VERIFIER_assert(a*a<=X);
 	
 
 }
